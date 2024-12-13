@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" dir="rtl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/header/icon--white.svg" />
+    <title>filimo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-bg_black2">
+    <main>
+        <header class="bg-bg_black h-[50px] fixed top-0 left-0 z-10 w-full">
+            <div class="flex 2xl:container mx-auto xl:px-24 px-5 items-center h-full">
+                <div class="flex gap-8 w-3/12 md:w-9/12 items-center">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="w-[90px]" src="img/header/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="w-[1px] h-[30px] bg-white opacity-40 hidden md:block"></div>
+                    <nav class="hidden md:block">
+                        <ul class="flex gap-8 *:text-white *:text-[12px]">
+                            <li class="flex items-center gap-1 hover:*:text-bg_yellow transition-all duration-500">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" data-name="Line Color"
+                                        xmlns="http://www.w3.org/2000/svg" transform="scale(-1 1)">
+                                        <path
+                                            d="M12 21c-3.9 0-7-2-7-7s5-5 5-11c3 2 4.37 4.1 5 8a5 5 0 0 0 2-3c1 1 2 4 2 6 0 3.14-1.28 7-7 7"
+                                            style="fill:none;stroke:#fbad3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" />
+                                    </svg>
+                                </span>
+                                <a href="#">فیلیموتور</a>
+                            </li>
+                            <li class="flex items-center gap-1 hover:*:text-bg_yellow transition-all duration-500">
+                                <span>
+                                    <img class="w-[16px]" src="img/header/icon--white.svg" alt="">
+                                </span>
+                                <a href="#">فیلیمو مدرسه</a>
+                            </li>
+                            <li class="flex items-center gap-1 hover:*:text-bg_yellow transition-all duration-500">
+                                <span>
+                                    <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                        xml:space="preserve">
+                                        <circle fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10"
+                                            cx="19.5" cy="12.5" r="8.5" />
+                                        <path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10"
+                                            d="m4 28 10-10" />
+                                    </svg>
+                                </span>
+                                <a href="#">جستجو</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex flex-row-reverse w-9/12 md:w-3/12 items-center gap-4 *:text-white text-[12px] bg">
+                    <button
+                        class="bg-[#2a2a2a] w-[60px] h-[40px] rounded-md hover:bg-[#434343] transition-all duration-300">
+                        <a href="#">ورود</a>
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-2 bg-bg_green w-[120px] h-[40px] rounded-md hover:bg-[#1d7d48] transition-all duration-300">
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H6v2h12zM4 6h16v2H4zm-2 4h20v12H2zm18 10v-8H4v8z" fill="#fff" />
+                            </svg>
+                        </span>
+                        <a href="#">خرید اشتراک</a>
+                    </button>
+                    <span class="block md:hidden">
+                        <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            xml:space="preserve">
+                            <circle fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" cx="19.5"
+                                cy="12.5" r="8.5" />
+                            <path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" d="m4 28 10-10" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <!-- header -->
+        <section class="mt-[50px]">
+            <section class="bg-bg1 w-full h-[90vh] md:h-[80vh] bg-center bg-cover relative ">
+                <div class="w-full h-full bg-bg_black3 bg-gradient-to-t from-20% from-bg_black2 to-70% to-transparent">
+                    <div class="w-full h-full 2xl:container mx-auto pb-[40px]">
+                        <div class="w-full h-full flex items-end justify-center">
+                            <div class="w-[100%] md:w-[80%] py-6 flex flex-wrap justify-center gap-8">
+                                <div class="text-bg_yellow text-[14px] text-center w-full">با فیلیمو بی‌وقفه فیلم ببین
+                                </div>
+                                <div class="text-white text-[26px] md:text-[32px] font-extrabold text-center w-full">
+                                    کنترل
+                                    همیشه دست توست!
+                                </div>
+                                <div class="w-full flex flex-wrap md:flex-nowrap justify-center gap-3 md:gap-0">
+                                    <div class="w-full flex gap-2 justify-center">
+                                        <span
+                                            class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-[14px] text-text_white">95 هزار اپیزود فیلم و سریال برای تماشا
+                                            داری
+                                        </p>
+                                    </div>
+                                    <div class="w-full  flex gap-2 justify-center">
+                                        <span
+                                            class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-[14px] text-text_white">می‌تونی دانلود کنی بعد بدون اینترنت تماشا
+                                            کنی
+                                        </p>
+                                    </div>
+                                    <div class="w-full flex gap-2 justify-center">
+                                        <span
+                                            class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-[14px] text-text_white">
+                                            می‌تونی یک عضو، مخصوص تماشای کودک بسازی</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="w-full flex justify-center md:mt-6">
+                                        <button
+                                            class="flex items-center gap-2 bg-bg_green w-[250px] h-[60px] justify-center rounded-lg hover:bg-[#1d7d48] transition-all duration-300">
+                                            <span>
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 2H6v2h12zM4 6h16v2H4zm-2 4h20v12H2zm18 10v-8H4v8z"
+                                                        fill="#fff" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-white text-[14px]">خرید اشتراک و تماشا</p>
+                                        </button>
+                                    </div>
+                                    <div class="w-full flex justify-center gap-2 items-center mt-2">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 32 32" xml:space="preserve">
+                                                <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10"
+                                                    d="M26 14v13H6V14m-1-4h22v4H5zm11 0h4a2 2 0 1 0 0-4c-2.375 0-4 4-4 4zm0 0h-4a2 2 0 1 1 0-4c2.375 0 4 4 4 4zm0 17V16m0-2v-2" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-text_white text-[10px]">تخفیف ویژه برای کاربران جدید</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="bg-bg_black2 w-full py-4">
+                <div class="2xl:container mx-auto xl:px-24 px-5">
+                    <div class="flex flex-wrap gap-8">
+                        <div class="flex items-center gap-6 w-full">
+                            <h2 class="text-white text-[16px] font-bold">محبوب‌ترین‌های فیلیمو</h2>
+                            <div
+                                class="bg-transparent border-neutral-600 border-[1px] w-[120px] h-[30px] rounded-[20px] *:text-white *:text-[12px] flex items-center cursor-pointer">
+                                <span
+                                    class="flex justify-center items-center w-[60px] h-[22px] bg-[#313131] rounded-[20px] font-bold">سریال</span>
+                                <span class="flex w-1/2 justify-center">فیلم</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-full justify-between py-6">
+                            <div
+                                class="border-white border-[2px] rounded-xl flex flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151654_256073.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="border-white rounded-xl flex flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151588_255087.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50 group-hover:opacity-0 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="border-white rounded-xl flex flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151493_255315.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50 group-hover:opacity-0 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="border-white rounded-xl hidden md:flex md:flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151653_255259.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50 group-hover:opacity-0 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="border-white rounded-xl hidden lg:flex lg:flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151632_255168.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50 group-hover:opacity-0 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="border-white rounded-xl hidden lg:flex lg:flex-wrap w-[30%] md:w-[20%] lg:w-[12%] group cursor-pointer">
+                                <div class="w-full h-full relative">
+                                    <div class="w-full h-[100%]">
+                                        <img class="w-full rounded-t-xl" src="img/film-1/mov_151625_255333.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="overlay w-full h-full bg-bg_black3 bg-gradient-to-t from-0% from-bg_black3 to-100% to-bg_black3 absolute top-0 left-0 rounded-xl opacity-50 group-hover:opacity-0 transition-all duration-300">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-bg_2 bg-cover bg-opacity-30 py-4">
+                <div class="2xl:container mx-auto xl:px-24 px-5">
+                    <div class="w-full pb-14">
+                        <div class="flex flex-wrap mt-6 gap-4">
+                            <div class="flex w-full">
+                                <div class="w-4/12">
+                                    <h3 class="text-white text-[16px] font-bold mb-10 cursor-pointer">زخم کاری: مجازات
+                                    </h3>
+                                    <p class="text-[#a1a1a1] text-[10px] mb-6">کارگردان: محمدحسین مهدویان</p>
+                                    <div class="flex gap-2">
+                                        <span
+                                            class="bg-[#282828] text-white text-[10px] px-4 py-1 flex justify-center items-center rounded-xl">درام</span>
+                                        <span
+                                            class="bg-[#282828] text-white text-[10px] px-4 py-1 flex justify-center items-center rounded-xl">رازآلود</span>
+                                    </div>
+                                </div>
+                                <div class="w-8/12 flex justify-end md:pl-14">
+                                    <img class="w-[220px]" src="img/bg-header2/mov_logo_85436_913.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-white text-[12px]">همه چیز مهیای جشن ازدواجی است که مالک آرزویش را
+                                    دارد.
+                                    در
+                                    سمت دیگر مالک در تلاش است تا برنده
+                                    بازی مذاکره با نروژی ...</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-full justify-between mt-10">
+                            <div class="w-[45%] md:w-[30%] lg:w-[20%] rounded-xl cursor-pointer">
+                                <figure class="w-full rounded-xl relative">
+                                    <img class="w-full rounded-xl" src="img/zakhm/mov_134613_64640.jpg" alt="">
+                                    <figcaption class="text-white text-[12px] mt-2">فصل 2 قسمت 1</figcaption>
+                                    <span
+                                        class="bg-[#2B2824] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-[50%]">
+                                        <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.79 2.093A.5.5 0 0 0 4 2.5v10a.5.5 0 0 0 .79.407l7-5a.5.5 0 0 0 0-.814z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                </figure>
+                            </div>
+                            <div class="w-[45%] md:w-[30%] lg:w-[20%] rounded-xl cursor-pointer">
+                                <figure class="w-full rounded-xl relative">
+                                    <img class="w-full rounded-xl" src="img/zakhm/mov_139025_64859.jpg" alt="">
+                                    <figcaption class="text-white text-[12px] mt-2">فصل 2 قسمت 1</figcaption>
+                                    <span
+                                        class="bg-[#2B2824] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-[50%]">
+                                        <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.79 2.093A.5.5 0 0 0 4 2.5v10a.5.5 0 0 0 .79.407l7-5a.5.5 0 0 0 0-.814z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                </figure>
+                            </div>
+                            <div class="w-[45%] md:w-[30%] lg:w-[20%] rounded-xl hidden md:flex cursor-pointer">
+                                <figure class="w-full rounded-xl relative">
+                                    <img class="w-full rounded-xl" src="img/zakhm/mov_139217_65185.jpg" alt="">
+                                    <figcaption class="text-white text-[12px] mt-2">فصل 2 قسمت 1</figcaption>
+                                    <span
+                                        class="bg-[#2B2824] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-[50%]">
+                                        <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.79 2.093A.5.5 0 0 0 4 2.5v10a.5.5 0 0 0 .79.407l7-5a.5.5 0 0 0 0-.814z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                </figure>
+                            </div>
+                            <div class="w-[45%] md:w-[30%] lg:w-[20%] rounded-xl hidden lg:flex cursor-pointer">
+                                <figure class="w-full rounded-xl relative">
+                                    <img class="w-full rounded-xl" src="img/zakhm/mov_139408_65435.jpg" alt="">
+                                    <figcaption class="text-white text-[12px] mt-2">فصل 2 قسمت 1</figcaption>
+                                    <span
+                                        class="bg-[#2B2824] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-[50%]">
+                                        <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.79 2.093A.5.5 0 0 0 4 2.5v10a.5.5 0 0 0 .79.407l7-5a.5.5 0 0 0 0-.814z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- device -->
+            <section class="py-16">
+                <div class="2xl:container mx-auto px-5 xl:px-24 flex">
+                    <div class="w-1/2 hidden md:flex pl-11">
+                        <img class="w-full" src="img/device/deviceYaghi.png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2 *:text-white flex items-center">
+                        <div>
+                            <div class="flex flex-wrap gap-4">
+                                <h3 class="text-[16px] font-bold">تماشای فیلیمو با همه دستگاه‌ها</h3>
+                                <p class="text-[12px] text-[#d8d8d8]">می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه
+                                    مختلف
+                                    مثل
+                                    موبایل، تبلت، لپ‌تاپ، تلویزیون
+                                    و... تماشا کنید.
+                                </p>
+                            </div>
+                            <div class="w-full flex md:hidden mt-6">
+                                <img class="w-[500px]" src="img/device/device2.png" alt="">
+                            </div>
+                            <div class="mt-8 flex flex-wrap gap-8">
+                                <div class="flex gap-3">
+                                    <div>
+                                        <img class="w-[25px] mt-1" src="img/device/laptop.png" alt="">
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <p class="text-[14px] font-bold w-full">کامپیوتر و لپ‌تاپ</p>
+                                        <p class="text-[12px] text-[#a1a1a1] w-full">windows PC - MacOS - Chorom OS</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <img class="w-[20px] mt-1" src="img/device/mobile.png" alt="">
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <p class="text-[14px] font-bold w-full">موبایل و تبلت</p>
+                                        <p class="text-[12px] text-[#a1a1a1] w-full">Android Phone & Tablets - Iphone
+                                            and
+                                            Ipad -
+                                            Amazon Fire Tablets</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <img class="w-[25px] mt-1" src="img/device/game.png" alt="">
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <p class="text-[14px] font-bold w-full">کنسول‌های بازی (Browser)</p>
+                                        <p class="text-[12px] text-[#a1a1a1] w-full">Xbox Series S - Xbox Seris X - PS5
+                                            -
+                                            PS4
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10 flex flex-wrap gap-8">
+                                <button
+                                    class="flex items-center justify-center gap-2 bg-bg_green w-[180px] h-[40px] rounded-md hover:bg-[#1d7d48] transition-all duration-300">
+                                    <span>
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 2H6v2h12zM4 6h16v2H4zm-2 4h20v12H2zm18 10v-8H4v8z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                    <a class="text-[12px]" href="#">خرید اشتراک و تماشا</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- toturial -->
+            <section class="bg-[#0D0D0D] py-16">
+                <div class="flex 2xl:container 2xl:mx-auto xl:px-24 px-5">
+                    <div class="w-full md:w-1/2 pl-12">
+                        <div class="flex flex-wrap gap-6">
+                            <h3 class="text-white text-[16px] font-bold">چطور با تلویزیون، فیلیمو تماشا کنم؟</h3>
+                            <p class="text-[#d8d8d8] text-[12px] ">ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های
+                                مختلف
+                                6 روش را فراهم کردیم. هرکدام از
+                                این
+                                6
+                                روش یک
+                                ویدیو آموزشی دارند که می‌توانید از لینک زیر، آن‌ها را تماشا کنید و روشی که با تلویزیون
+                                شما
+                                سازگار
+                                است را انتخاب کنید.
+                            </p>
+                        </div>
+                        <div class="flex md:hidden">
+                            <img src="img/toturial/TVBG-yaghi.png" alt="">
+                        </div>
+                        <div class="mt-12 flex flex-wrap gap-8">
+                            <div class="flex gap-3">
+                                <div>
+                                    <img class="w-[30px] mt-1" src="img/toturial/TV.png" alt="">
+                                </div>
+                                <div class="flex flex-wrap gap-3">
+                                    <h4 class="text-white text-[14px] w-full">تلویزیون</h4>
+                                    <p class="text-[#b5b5b5] text-[12px] w-full">Amazon Fire TV - LG TVs - Chrome Cast -
+                                        Apple TV -
+                                        Android TV devices - Samsung</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <img class="w-[30px] mt-1" src="img/toturial/androidTV.png" alt="">
+                                </div>
+                                <div class="flex flex-wrap gap-3">
+                                    <h4 class="text-white text-[14px] w-full">اندروید تی‌وی</h4>
+                                    <p class="text-[#b5b5b5] text-[12px] w-full">NVIDIA - amazon - xiaomi - minix -
+                                        skystream - turewell - ematic - humax - matricom
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-14">
+                            <button
+                                class="flex items-center justify-center gap-2 bg-[#737373] w-[250px] h-[40px] rounded-md hover:bg-[#888888] transition-all duration-300">
+                                <a class="text-white text-[12px]" href="#">ویدیوهای آموزشی تماشا با تلویزیون</a>
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#fff" fill-opacity=".01" d="M0 0h48v48H0z" />
+                                        <path d="M31 36 19 24l12-12" stroke="#fff" stroke-width="4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex md:w-1/2">
+                        <img class="w-full" src="img/toturial/TVBG.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-bg_black2 py-16">
+                <div class="2xl:container mx-auto xl:px-24 px-5 flex flex-wrap">
+                    <div class="w-full pr-4">
+                        <h3 class="text-white text-[16px] font-bold">محتواهای رایگان</h3>
+                    </div>
+                    <div class="w-full mt-8 flex flex-wrap justify-between">
+                        <div class="w-[32%] md:w-[18%] lg:w-[15%] flex justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_srl_11933_1-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">پایتخت</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="w-[32%] md:w-[18%] lg:w-[15%] flex justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_639_995-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">عقرب</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="w-[32%] md:w-[18%] lg:w-[15%] flex justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_srl_41017_932-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">ملکه گدایان</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="hidden md:w-[18%] lg:w-[15%] md:flex justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_6121_429-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">ویرانگر</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="hidden md:w-[18%] lg:w-[15%] md:flex justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_srl_12645_1-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">بالشها</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="hidden lg:flex lg:w-[15%] justify-center">
+                            <figure class="relative">
+                                <img class="rounded-lg" src="img/free/mov_11388_20029-b.jpg" alt="">
+                                <figcaption class="text-white text-[12px] mt-2">راز دشت تاران</figcaption>
+                                <div
+                                    class="flex gap-2 bg-[#1d2b1f] w-[65px] py-1 justify-center rounded-xl absolute top-1 right-2">
+                                    <span>
+                                        <img src="img/free/icon-play.svg" alt="">
+                                    </span>
+                                    <span class="text-[#4dab56] text-[10px]">رایگان</span>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- free -->
+
+            <section class="bg-[#151515]">
+                <div class="bg-bg_gra1 bg-opacity-20 pt-14">
+                    <div class="2xl:container mx-auto xl:px-24 px-5">
+                        <div class="flex flex-wrap md:px-20">
+                            <div class="w-full md:w-1/2 order-2 md:order-1 mt-6 md:mt-0 flex justify-center">
+                                <img class="w-[500px] md:w-[400px]" src="img/animi/bg-kids.png" alt="">
+                            </div>
+                            <div class="w-full md:w-1/2 flex flex-col items-center justify-center order-1 md:order-2">
+                                <div class="text-white w-full">دنیایی متنوع از فیلم و کارتون‌های کودکانه</div>
+                                <div class="text-white text-opacity-50 text-[12px] w-full mt-8">
+                                    ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک فضای امن برای
+                                    تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال‌ها
+                                    دسترسی نداشته‌باشد.
+                                </div>
+                                <div class="flex gap-4 w-full mt-14">
+                                    <button
+                                        class="flex items-center justify-center gap-2 bg-white w-[140px] h-[40px] rounded-md hover:bg-[#c5c5c5] transition-all duration-300">
+                                        <a class="text-[12px]" href="#">فیلیمو کودک بساز</a>
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center gap-2 bg-white w-[140px] h-[40px] rounded-md hover:bg-[#c5c5c5] transition-all duration-300">
+                                        <a class="text-[12px]" href="#">تماشای فیلیمو کودک</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+
+            <section class="bg-bg_bg4 bg-center bg-cover pt-14 pb-20">
+                <div class="2xl:container mx-auto xl:px-24 px-5">
+                    <div>
+                        <div class="w-[100%] md:w-[90%] mx-auto py-6 flex flex-wrap justify-center gap-8">
+                            <div class="text-white text-[16px] font-bold text-center w-full">سینما آنلاین فیلیمو</div>
+                            <div class="w-full flex flex-wrap md:flex-nowrap justify-center gap-3 xl:gap-0">
+                                <div class="w-full flex gap-2 justify-center">
+                                    <span
+                                        class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                        <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-[13px] text-text_white">فیلم‌های روز سینمای ایران
+                                    </p>
+                                </div>
+                                <div class="w-full  flex gap-2 justify-center">
+                                    <span
+                                        class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                        <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-[13px] text-text_white">۸ ساعت زمان برای مشاهده فیلم در هر کجا
+                                    </p>
+                                </div>
+                                <div class="w-full flex gap-2 justify-center">
+                                    <span
+                                        class="bg-bg_green2 w-[20px] h-[20px] rounded-[50%] flex justify-center items-center">
+                                        <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m1 7 4.5 4.5L14 3" stroke="#1D8B51" stroke-linecap="square" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-[13px] text-text_white">خرید یک بلیت برای تماشا همراه با همه خانواده
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-between mt-10 w-[100%] md:w-[85%] mx-auto">
+                        <div
+                            class="flex gap-3 w-full xl:w-[48%] bg-bg_on boredr-[#33353d] border-[1px] rounded-xl p-2 relative">
+                            <div>
+                                <img class="rounded-lg cursor-pointer" src="img/online/mov_151095_217051.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col justify-between *:text-white py-3">
+                                <a class="font-bold text-[13px]" href="#">تگزاس ۳</a>
+                                <div class="text-[12px] text-opacity-35">
+                                    کارگردان: null
+                                </div>
+                                <div>
+                                    <span class="text-[11px] font-bold bg-bg_span py-1 px-3 rounded-xl">کمدی</span>
+                                    <span class="text-[11px] font-bold bg-bg_span py-1 px-3 rounded-xl">اکشن</span>
+                                </div>
+                                <div class="border-[1px] w-[80px] flex justify-center py-2 rounded-lg">
+                                    <a class="text-[11px]" href="#">خریدبلیت</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-2 justify-center absolute top-[19px] left-8 bg-bg_span py-2 px-4 rounded-xl">
+                                <span>
+                                    <img class="w-[15px]" src="img/online/ticket.png" alt="">
+                                </span>
+                                <span class="text-white text-[11px]">اکران آنلاین</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex gap-3 w-full xl:w-[48%] bg-bg_on boredr-[#33353d] border-[1px] rounded-xl p-2 relative mt-6 xl:mt-0">
+                            <div>
+                                <img class="rounded-lg cursor-pointer" src="img/online/mov_150891_216832.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col justify-between *:text-white py-3">
+                                <a class="font-bold text-[13px]" href="#">خورشید آن ماه</a>
+                                <div class="text-[12px] text-opacity-35">
+                                    کارگردان: null
+                                </div>
+                                <div>
+                                    <span class="text-[11px] font-bold bg-bg_span py-1 px-3 rounded-xl">درام</span>
+                                </div>
+                                <div class="border-[1px] w-[80px] flex justify-center py-2 rounded-lg">
+                                    <a class="text-[11px]" href="#">خریدبلیت</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-2 justify-center absolute top-[19px] left-8 bg-bg_span py-2 px-4 rounded-xl">
+                                <span>
+                                    <img class="w-[15px]" src="img/online/ticket.png" alt="">
+                                </span>
+                                <span class="text-white text-[11px]">اکران آنلاین</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+
+            <section class="bg-[#111111]">
+                <div class="2xl:container mx-auto xl:px-24 px-5 py-20">
+                    <div class="flex flex-col items-center gap-3">
+                        <h4 class="text-white text-[16px]">سوالات متداول</h4>
+                        <p class="text-[#9e9e9e] text-[12px]">سوال شایع دیگر کاربران شاید برای شما پیش امده باشد</p>
+                    </div>
+                    <div class="flex flex-col gap-2 mt-14">
+                        <div
+                            class="flex w-full justify-between bg-[#161616] py-4 px-4 border-[1px] border-[#33353d] rounded-xl cursor-pointer">
+                            <p class="text-white text-[13px]">آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</p>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color"
+                                    xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                                    <path
+                                        d="M12 20a1 1 0 0 1-1-1v-6H5a1 1 0 0 1 0-2h6V5a1 1 0 0 1 2 0v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-1 1"
+                                        style="fill:#fbad3c" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div
+                            class="flex w-full justify-between bg-[#161616] py-4 px-4 border-[1px] border-[#33353d] rounded-xl cursor-pointer">
+                            <p class="text-white text-[13px]">آیا فیلیمو برای خارج از ایران در دسترس است؟</p>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color"
+                                    xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                                    <path
+                                        d="M12 20a1 1 0 0 1-1-1v-6H5a1 1 0 0 1 0-2h6V5a1 1 0 0 1 2 0v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-1 1"
+                                        style="fill:#fbad3c" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div
+                            class="flex w-full justify-between bg-[#161616] py-4 px-4 border-[1px] border-[#33353d] rounded-xl cursor-pointer">
+                            <p class="text-white text-[13px]">آیا برای تماشای فیلم‌های اکران آنلاین، باید اشتراک بخرم؟
+                            </p>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color"
+                                    xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                                    <path
+                                        d="M12 20a1 1 0 0 1-1-1v-6H5a1 1 0 0 1 0-2h6V5a1 1 0 0 1 2 0v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-1 1"
+                                        style="fill:#fbad3c" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div
+                            class="flex w-full justify-between bg-[#161616] py-4 px-4 border-[1px] border-[#33353d] rounded-xl cursor-pointer">
+                            <p class="text-white text-[13px]">از کجا می‌توانم نرم‌افزار اندروید یا iOS فیلیمو را دانلود
+                                کنم؟</p>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color"
+                                    xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                                    <path
+                                        d="M12 20a1 1 0 0 1-1-1v-6H5a1 1 0 0 1 0-2h6V5a1 1 0 0 1 2 0v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-1 1"
+                                        style="fill:#fbad3c" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+
+            <section class="bg-[#191919]">
+                <footer class="2xl:container mx-auto xl:px-24 px-5">
+                    <div class="social-footer w-full flex flex-wrap gap-4 py-8 *:text-white">
+                        <div class="w-full flex items-center justify-end">
+                            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+                                href="https://www.instagram.com/alireza_hasanpour_frontend">alireza_hasanpour_frontend@
+                            </a>
+                            <span class="mr-2">
+                                <i
+                                    class="fa fa-instagram text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+                            </span>
+                        </div>
+                        <div class="w-full flex items-center justify-end">
+                            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+                                href="https://www.linkedin.com/in/alireza-hasanpour-frontend/">linkedin.com/in/alireza-hasanpour-frontend
+                            </a>
+                            <span class="mr-2">
+                                <i
+                                    class="fa fa-linkedin text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+                            </span>
+                        </div>
+                        <div class="w-full flex items-center justify-end">
+                            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+                                href="https://github.com/alirezafrontend/">github.com/alirezafrontend
+                            </a>
+                            <span class="mr-2">
+                                <i
+                                    class="fa fa-github text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+
+            <!--  -->
+
+            <section class="hidden lg:block">
+                <div id="footer-me" class="hidden lg:flex">
+                    <div>
+                        <div>
+                            <a href="https://www.instagram.com/alireza_hasanpour_frontend">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/alirezafrontend/">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/alireza-hasanpour-frontend/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cursor-pointer">
+                            <img src="img/me.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--  -->
+    </main>
+</body>
+
+</html>
