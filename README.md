@@ -23,9 +23,6 @@ full responsive website by Tailwind.
 ![viewfinal](https://github.com/user-attachments/assets/4ae57e35-1a81-47d1-9431-d1e253a57aac)
 
 
-![viewfinal](https://github.com/user-attachments/assets/02d83eb8-5b5b-4fd4-bf9f-48c8783dec99)
-
-
 
 
 ### [Watch Demo](https://alirezafrontend.github.io/filimo/ "Watch Demo")
